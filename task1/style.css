@@ -1,0 +1,398 @@
+*{
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* Navigation bar */
+.logo{
+    width: 200px;
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li{
+    display: inline;
+    text-align: right;
+    font-size: 18px;
+    padding: 6px 8px;
+}
+.navi {
+    background-color: rgb(204, 206, 204);
+    display:flex;
+    justify-content: space-between;
+}
+nav ul li a:hover{
+    background-color: rgb(114, 106, 106);
+    color:rgb(253, 249, 242);
+    border-radius: 25px;
+    padding: 6px;
+}
+#form{
+    padding: 10px;
+    }
+.find{
+    padding: 10px;
+    width: 250px;
+    border:1px solid black
+}
+button{
+    background-color: lightblue;
+    padding: 10px;
+} 
+/* Home Page */
+.main{
+    padding-left: 90px;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+}
+.btn{
+    cursor: pointer;
+   margin: 5px;
+}
+.btn:hover{
+    background-color:rgb(224, 75, 224);
+}
+.frame{
+    overflow: hidden;
+    height: 500px;
+    width: 1250px;
+}
+@-webkit-keyframes any{
+   0%{left: 0px;}
+   10%{left: 0px;}
+   20%{left: 1250px;}
+   30%{left: 1250px;}
+   40%{left: 2500px;}
+   50%{left: 2500px;}
+   60%{left: 1250px;}
+   70%{left: 1250px;}
+   80%{left: 0px;}
+   90%{left: 0px;}
+   100%{left: 0px;}
+}
+.slider{
+    width: 3750px;
+    height: 500px;
+    margin: 0 0 0 -2500px;
+    position: relative;
+    -webkit-animation-name: any;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.images{
+    height: 500px;
+    width: 1250px;
+    position: relative;
+    float: left;
+}
+/* Welcome section */
+.H3{
+    background-color: dimgray;
+    text-align: center;
+    color: yellow;
+    padding: 8px;
+}
+.bot{
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative; 
+    left: 40%;
+    background-color: rgb(130, 243, 107);
+    color: black;
+}
+.container{
+    margin: 40px auto;
+    width: 80%;
+    padding:8px;
+}
+.text{
+    text-align: justify;
+}
+/* Courses section */
+.top{
+    width: 90%;
+    padding: 8px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+}
+.course{
+    height: 400px;
+    width: 260px;
+    border: 1px solid red;
+    margin: 0px 8px;
+    background-color: rgb(230, 204, 204);
+    transition: 1s ease;
+}
+.course:hover{
+    transform: scale(1.15);
+    background-color: yellow;
+}
+.bt{
+    margin-left: 90px;
+    border-radius: 40px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.bt:hover{
+   
+    background-color: rgb(0, 174, 255);
+    color: black;
+}
+.ct{
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 600;
+    margin-top: 0%;
+}
+
+.co{
+    padding-left: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+/* Life at Career section */
+#lf{
+	padding-top: 10px;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	color: black;
+	font-size: 30px;
+}
+.pic-slider{
+	background-color: rgb(187, 184, 184);
+	position: relative;
+	padding-bottom: 50px;	
+}
+.pic-slider .container1{
+	padding-top: 0px;
+	width: 60%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.pic-slider .container1 .slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;	
+}
+.pic-slider .container1 img{
+	margin-top: 0px;
+	width: 100%;
+	height: 70%;
+	border-radius: 8px;
+}
+
+.pic-slider .container1 ul{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform:translateX(-50%) ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	margin-top: 30px 
+}
+.pic-slider .container1 ul li{
+	list-style: none;
+	cursor:pointer;
+	margin-top: 40px;
+}
+.pic-slider .container1 ul li img{
+	width: 120px;
+	 margin-top: 0px;
+	margin-bottom: 35px;
+	margin: 5px 5px;
+	height: 80px;
+	transition: all 0.3s;
+	
+}
+.pic-slider .container1 ul li img:hover{
+	transform: scale(1.3);
+}
+ /* Newsletter signup section  */
+.mail{
+    background: linear-gradient(135deg,#cdd64f,rgb(236, 94, 42),#c419b5);
+    width: 900px;
+    height: 250px;
+    text-align: center;
+    margin:auto;
+}
+.free{
+    color:rgb(34, 17, 17);
+      padding: 20px;
+    
+}
+/* video projects section */
+#vd{	
+	margin-bottom: 20px;
+	color: black;
+	font-size: 30px;
+}
+.vd-slider{
+	background-color: rgb(197, 165, 230);
+	position: relative;	
+}
+.vd-slider .container1{
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.vd-slider .container1 .slider1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60%;	
+}
+.vd-slider .container1 video{
+	margin-top: 30px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.vd-slider .container1 ul{
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform:translateX(-50%) ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+}
+.vd-slider .container1 ul li{
+	list-style: none;
+	cursor:pointer;
+	margin: 5px;
+}
+.vd-slider .container1 ul li video{
+	width: 150px;
+	transition: all 0.3s;
+}
+.vd-slider .container1 ul li video:hover{
+	transform: scale(1.1);
+}
+
+/* Career team */
+
+.team{
+	margin: 10px 0px;
+    text-align: center;
+}
+.team #con2{
+	margin-bottom: 20px;
+	color: black;
+	font-size: 30px;
+}
+.row{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.row .column{
+    width: 200px;
+    margin: 5px;
+    padding: 10px 5px;
+}
+.row .column .team-image{
+    max-width: 130px;
+    width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 90%;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.row .column .team-image .img{
+    width: 100%;
+    height: 100%;
+}
+.row .column .team-image .social{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 90%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+.row .column .team-image .social li{
+    margin: 10px 0px;
+}
+.row .column .team-image .social .fab{
+    font-size: 20px;
+}
+.row .column .team-image:hover .social{
+    transform: scale(1);
+}
+
+/* contact  section */
+.contact-me{
+    display: flex;
+    justify-content: center; 
+}
+.contact{
+    
+    background: linear-gradient(135deg,rgb(40, 40, 201),rgb(237, 243, 237),rgb(214, 21, 21));
+    width: 500px;
+    height: 350px;
+}
+.form{
+    margin-left: 40px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+.put{
+    width: 350px;
+}
+/* footer section */
+.footer{
+    background-color: rgb(161, 161, 161);
+    padding: 20px 0;
+}
+.footer-con{
+    margin: auto;
+    width: 1170px;
+}
+.row0{
+    display: flex;
+    flex-wrap: wrap; 
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 30px;
+   line-height: 20px;
+}
+.me{
+    text-align: center;
+    font-size: 15px;
+}
